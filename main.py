@@ -57,7 +57,7 @@ if br == '1':
 
     if broad == 'Yes':
         broad_search = True
-g
+
     domain = get_domain_name(in_url)
 
     Spider(PROJECT_NAME, in_url)
