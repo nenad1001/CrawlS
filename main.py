@@ -20,7 +20,7 @@ domain = ''
 
 broad_search = False
 
-#Create spiders (will die when main exists)
+# Create spiders (will die when main exits)
 
 
 
