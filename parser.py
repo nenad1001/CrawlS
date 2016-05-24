@@ -15,7 +15,7 @@ class Parser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         if tag == 'a' or tag == 'img':
             for (attr, value) in attrs:
-                if attr == 'href':
+                if attr == 'href' or attr == 'src':
                     url = parse.urljoin(self.base_url, value)
                     self.links.add(url)
 

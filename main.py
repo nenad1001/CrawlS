@@ -48,7 +48,7 @@ def create_jobs():
             thread_queue.put(item)
             Database.add_url_to_visited(url, distance)
             thread_queue.join()
-            create_jobs()
+    create_jobs()
 
 if br == '1':
     in_url = input("ENTER HOMEPAGE (FULL URL)\n")
